@@ -1,5 +1,3 @@
-#!/usr/bin/perl --
-
 use utf8;
 use strict;
 use Encode;
@@ -9,6 +7,7 @@ use File::Copy;
 # The directory of templates
 my $TemplateDir = 'C:/home/etc/templates/';
 
+# Default encoding of Windows
 my $RuntimeCharSet = 'cp932';
 
 my $target_dir = $ARGV[0];
