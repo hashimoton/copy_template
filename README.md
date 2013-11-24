@@ -8,7 +8,7 @@ You can use any folder to collect template files and select them in the file ope
 PLATFORMS
 -------------------
 
-* Works Windows XP or 7.
+* Works on Windows XP and 7.
 
 * Not tested on Windows Vista, 8, and 8.1.
 
@@ -16,7 +16,7 @@ PLATFORMS
 REQUIREMENTS
 -------------------
 
-* ActivePerl 5.10.0 or later.
+* ActivePerl 5.10.0 or later(since this script uses Tkx).
 
 
 SETUP
@@ -39,7 +39,7 @@ SETUP
 TODO
 -------------------
 
-* Copying multiple files at a time.
-
+* Get encoding automatically.
+* Check overwriting.
 
 
