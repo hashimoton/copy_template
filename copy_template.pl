@@ -23,8 +23,6 @@ my $selected_file_list = Tkx::tk___getOpenFile(
 	-multiple => 1);
 
 
-# print $selected_file_list . "\n";
-
 if($target_dir && $selected_file_list)
 {
 	my ($sec, $min, $hour, $mday, $month, $year) = localtime(time);
