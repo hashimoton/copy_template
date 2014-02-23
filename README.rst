@@ -1,26 +1,27 @@
+***********************
 copy_template
-====================
+***********************
 
 copy_template.pl is an alternative of "new" context menu on Windows.
 You can use any folder to collect template files and select them in the file open dialog.
 
-
+==========================
 PLATFORMS
--------------------
+==========================
 
 * Works on Windows XP and 7.
 
 * Not tested on Windows Vista, 8, and 8.1.
 
-
+==========================
 REQUIREMENTS
--------------------
+==========================
 
-* ActivePerl 5.10.0 or later(since this script uses Tkx).
+* ActivePerl 5.10.0 or later(since this script depends on Tkx).
 
-
+==========================
 SETUP
--------------------
+==========================
 
 1. Edit copy_template.pl.
 2. Modify $TemplateDir, it is the path to your template files.
@@ -35,11 +36,16 @@ SETUP
      name=command
      value=\path\to\wperl.exe \path\to\copy_template.pl "%V"
 
-
+==========================
 TODO
--------------------
+==========================
 
 * Get encoding automatically.
 * Check overwriting.
 
+==========================
+LICENSE
+==========================
+
+Public Domain
 
