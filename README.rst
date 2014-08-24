@@ -28,13 +28,17 @@ SETUP
 3. Modify $RuntimeCharSet, it is the default encoding og your Windows.
 4. Run regedit.exe.
 5. Create a new key under HKEY_CLASSES_ROOT\Directory\Background\shell.
-6. Edit the new key as
-   * name=Template
-   * value=Copy Template
-   The text in the value will appear when you right-click on background of a folder.
-7. Create a sub key as
-   * name=command
-   * value=\path\to\wperl.exe \path\to\copy_template.pl "%V"
+6. Edit the new key as:
+
+* name=Template
+* value=Copy Template
+
+The text in the value will appear when you right-click on background of a folder.
+
+7. Create a sub key as:
+
+* name=command
+* value=\path\to\wperl.exe \path\to\copy_template.pl "%V"
 
 ==========================
 TODO
