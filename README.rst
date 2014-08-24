@@ -32,15 +32,17 @@ SETUP
 
 ::
 
-  * name=Template
-  * value=Copy Template
-
-The text in the value will appear when you right-click on background of a folder.
+  name=Template
+  value=Copy Template
+  
+  The text in the value will appear when you right-click on background of a folder.
 
 7. Create a sub key as:
 
-* name=command
-* value=\path\to\wperl.exe \path\to\copy_template.pl "%V"
+::
+
+  name=command
+  value=\path\to\wperl.exe \path\to\copy_template.pl "%V"
 
 ==========================
 TODO
