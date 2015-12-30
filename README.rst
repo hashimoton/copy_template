@@ -49,7 +49,6 @@ TODO
 ==========================
 
 * Get encoding automatically.
-* Check overwriting.
 
 ==========================
 LICENSE
