@@ -43,9 +43,21 @@ if($target_dir && $selected_file_list)
 		$target_file =~ s/%h/$hour/g;
 		$target_file =~ s/%m/$min/g;
 		$target_file =~ s/%s/$sec/g;
+		
+		my $target_path = $target_dir . "/" . encode($RuntimeCharSet, $target_file);
 
-		copy(encode($RuntimeCharSet, $template_file),
-			$target_dir . "/" . encode($RuntimeCharSet, $target_file));
+		if(-e $target_path)
+		{
+			Tkx::tk___messageBox(
+				-parent => $top,
+				-icon => "warning",
+				-title => "Failed",
+				-message => "$target_file already exists.");
+		}
+		else
+		{
+			copy(encode($RuntimeCharSet, $template_file), $target_path);
+		}
 	}
 }
 
