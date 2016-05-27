@@ -4,12 +4,14 @@ use Encode;
 use Tkx;
 use File::Copy;
 use File::Basename;
+use Win32::API;
 
 # The directory of templates
 my $TemplateDir = 'C:/home/etc/templates/';
 
 # Default encoding of Windows
-my $RuntimeCharSet = 'cp932';
+Win32::API->Import('kernel32', 'UINT GetACP()');
+my $RuntimeCharSet = 'cp' . GetACP();
 
 my $target_dir = $ARGV[0];
 
