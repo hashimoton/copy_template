@@ -36,7 +36,7 @@ Setup
   
   The text in the value will appear when you right-click on background of a folder.
 
-7. Create a sub key as:
+6. Create a sub key as:
 
 ::
 
